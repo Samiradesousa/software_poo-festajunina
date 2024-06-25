@@ -76,7 +76,9 @@ def listar_jurados_e_notas():
 def main():
     
     while True:
-        print("\n*** Bem-vindo ao Concurso de Festa Junina ***\n")
+        print('''
+B̳e̳m̳-̳v̳i̳n̳d̳o̳ a̳o̳ C̳o̳n̳c̳u̳r̳s̳o̳ d̳e̳ F̳e̳s̳t̳a̳ J̳u̳n̳i̳n̳a̳
+              ​''')
         print("1 - Cadastrar Alunos")
         print("2 - Cadastrar Jurados")
         print("3 - Dar Notas")
