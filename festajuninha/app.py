@@ -11,8 +11,8 @@ def cadastrar_alunos():
 
         # Validação da categoria
         while categoria not in ['1', '2']:
-            print("Categoria inválida. Digite 1 para Miss ou 2 para Mister.")
-            categoria = input("Digite a categoria do aluno (1 para Miss ou 2 para Mister): ")
+            print("\nCategoria inválida. Digite 1 para Miss ou 2 para Mister.")
+            categoria = input("\nDigite a categoria do aluno (1 para Miss ou 2 para Mister): ")
 
         # Convertendo categoria de '1'/'2' para 'Miss'/'Mister'
         if categoria == '1':
@@ -95,7 +95,7 @@ def main():
             print("Encerrando o programa...")
             break
         else:
-            print("Opção inválida! Tente novamente.")
+            print("\nOpção inválida! Tente novamente.")
 
 if __name__ == "__main__":
     main()
