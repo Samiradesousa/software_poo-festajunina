@@ -15,11 +15,11 @@ class Aluno:
         self.categoria = categoria
         self.notas = []
 
-    # Método para uma representação em string da nota
-    def __str__(self):
-        notas_str = '\n' .join(str(nota) for nota in self.notas)
-        return f'Aluno: {self.nome} | Turma: {self.turma} | Categoria: {self.categoria} | Notas:\n {notas_str}'
-    
+    # Método de classe para adicionar um novo aluno à lista de alunos
+    @classmethod
+    def adicionar_aluno(cls, aluno):
+        cls.alunos.append(aluno)
+
     # Método para adicionar uma nota ao aluno
     def adicionar_nota(self, nota):
         self.notas.append(nota)
@@ -29,7 +29,3 @@ class Aluno:
     def listar_alunos(cls):
         return cls.alunos
 
-    # Método de classe para adicionar um novo aluno à lista de aluno
-    @classmethod
-    def adicionar_aluno(cls, aluno):
-        cls.alunos.append(aluno)
