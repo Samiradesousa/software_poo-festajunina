@@ -70,6 +70,8 @@ def listar_jurados_e_notas():
             media = nota.media()
             print(f"{jurado.nome:<20} | {jurado.curso:<20} | {aluno_nome:<20} | {nota.elegancia:<10.2f} | {nota.desenvoltura:<15.2f} | {nota.simpatia:<10.2f} | {nota.item:<10.2f} | {media:<10.2f}")
 
+    input("\nPressione Enter para retornar ao menu...")  # Pausa até que o usuário pressione Enter
+
 # Função principal que controla o menu do sistema.
 def main():
     
