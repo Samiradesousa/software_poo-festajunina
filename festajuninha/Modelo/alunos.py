@@ -28,5 +28,3 @@ class Aluno:
     @classmethod
     def listar_alunos(cls):
         return cls.alunos
-
-software_poo
